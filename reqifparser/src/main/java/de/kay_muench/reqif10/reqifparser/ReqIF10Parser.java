@@ -28,8 +28,8 @@ import org.eclipse.rmf.reqif10.ReqIF;
 import org.eclipse.rmf.reqif10.ReqIF10Package;
 import org.eclipse.rmf.reqif10.datatypes.DatatypesPackage;
 import org.eclipse.rmf.reqif10.xhtml.XhtmlPackage;
-import org.eclipse.rmf.serialization.XMLPersistenceMappingResourceFactoryImpl;
-import org.eclipse.rmf.serialization.XMLPersistenceMappingResourceSetImpl;
+import org.eclipse.rmf.reqif10.serialization.ReqIF10ResourceFactoryImpl;
+import org.eclipse.sphinx.emf.serialization.XMLPersistenceMappingResourceSetImpl;
 
 public final class ReqIF10Parser {
 	private String reqIFFilename;
@@ -79,7 +79,7 @@ public final class ReqIF10Parser {
 	private ReqIF parse(final String fileName) {
 		try {
 			URI uri = URI.createFileURI(fileName);
-			ResourceFactoryImpl resourceFactory = new XMLPersistenceMappingResourceFactoryImpl();
+			ResourceFactoryImpl resourceFactory = new ReqIF10ResourceFactoryImpl();
 			XMLResource resource = (XMLResource) resourceFactory
 					.createResource(uri);
 			Map<?, ?> options = null;
