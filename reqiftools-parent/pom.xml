@@ -26,8 +26,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<emf-version>2.9.1.v20130827-0309</emf-version>
-		<rmf-version>0.11.0.201408280302</rmf-version>
+		<emf-version>2.10.1</emf-version>
+		<rmf-version>0.13.0-SNAPSHOT</rmf-version>
 		<imageinformationprovider-version>0.0.1-SNAPSHOT</imageinformationprovider-version>
 		<junit-version>4.11</junit-version>
 		<log4j-version>1.2.12</log4j-version>
@@ -52,23 +52,23 @@
 				<version>${emf-version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.eclipse.rmf</groupId>
+				<groupId>org.eclipse.rmf.plugins</groupId>
 				<artifactId>org.eclipse.rmf.reqif10</artifactId>
 				<version>${rmf-version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.eclipse.rmf</groupId>
+				<groupId>org.eclipse.rmf.plugins</groupId>
 				<artifactId>org.eclipse.rmf.reqif10.common</artifactId>
 				<version>${rmf-version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.eclipse.rmf</groupId>
+				<groupId>org.eclipse.rmf.plugins</groupId>
 				<artifactId>org.eclipse.rmf.reqif10.xhtml</artifactId>
 				<version>${rmf-version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.eclipse.rmf</groupId>
-				<artifactId>org.eclipse.rmf.serialization</artifactId>
+				<groupId>org.eclipse.rmf.plugins</groupId>
+				<artifactId>org.eclipse.rmf.reqif10.serialization</artifactId>
 				<version>${rmf-version}</version>
 			</dependency>
 			<dependency>
@@ -98,7 +98,7 @@
 	</dependencyManagement>
 	<url>de.kay-muench.reqif10</url>
 	<modules>
-		<module>../reqifcompiler</module>
+		<!--<module>../reqifcompiler</module>-->
 		<module>../reqifiterator</module>
 		<module>../reqifparser</module>
 	</modules>
